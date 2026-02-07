@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['safetysig',['safetysig',['../structtcp___socket.html#a96352a0c71dc23f42288c58ff335695b',1,'tcp_Socket']]],
+  ['safetytcp',['safetytcp',['../structtcp___socket.html#a1c3e79d13b036d6a259f44b76f19d706',1,'tcp_Socket']]],
+  ['secret',['secret',['../structtcp___socket.html#af6f0589e40f2965d65f6ef912b57f844',1,'tcp_Socket']]],
+  ['sel_5fmin_5fblock',['sel_min_block',['../select_8c.html#a1a59922cb35db3c2c5e4111ac83a8e09',1,'select.c']]],
+  ['send_5fnext',['send_next',['../structtcp___socket.html#ade42b42ef8d2b0ea84e20659bee20095',1,'tcp_Socket']]],
+  ['send_5funa',['send_una',['../structtcp___socket.html#aa82b017b4eea1edb791fcad313a2618d',1,'tcp_Socket']]],
+  ['seq_5fnum',['seq_num',['../struct__raw___socket.html#a9182b855b12e31caffe2ba35640e2f50',1,'_raw_Socket']]],
+  ['sign_5fopt',['sign_opt',['../pctcp_8c.html#ae222828217119b5028f1e6ff74839c5e',1,'pctcp.c']]],
+  ['sin_5fmask',['sin_mask',['../pctcp_8c.html#ab5b064429453fa5bc15f75a75f746167',1,'pctcp.c']]],
+  ['sk_5fscope',['sk_scope',['../bsddbug_8c.html#a3fb1802b8e14f8625db721795d6fed79',1,'bsddbug.c']]],
+  ['sock_5finit_5fcalled',['sock_init_called',['../sock__ini_8c.html#a5a0fd01376aff66671088101840f85b4',1,'sock_ini.c']]],
+  ['start_5fday',['start_day',['../timer_8c.html#a27a5eacb62251ee03737a3d51a003177',1,'timer.c']]],
+  ['start_5ftime',['start_time',['../timer_8c.html#af4211e1ba0e676018599e88cfae3537a',1,'timer.c']]],
+  ['state',['state',['../structtcp___socket.html#a796632a5244be767d6d23d09912e7f36',1,'tcp_Socket']]],
+  ['subnet',['subnet',['../structgate__entry.html#a9af7b19d5f2655545540d7d3ed3a285b',1,'gate_entry']]],
+  ['survive_5fbootp',['survive_bootp',['../sock__ini_8c.html#a71a73c796f35637af25792eed69c7ad2',1,'survive_bootp():&#160;sock_ini.c'],['../sock__ini_8h.html#a71a73c796f35637af25792eed69c7ad2',1,'survive_bootp():&#160;sock_ini.c'],['../tcp_8h.html#a858d9a2508ef39509451ad9ad19f803d',1,'survive_bootp():&#160;tcp.h']]],
+  ['survive_5fdhcp',['survive_dhcp',['../sock__ini_8c.html#adc6c5b0398aa0632539e3253d4cdf46a',1,'survive_dhcp():&#160;sock_ini.c'],['../sock__ini_8h.html#adc6c5b0398aa0632539e3253d4cdf46a',1,'survive_dhcp():&#160;sock_ini.c'],['../tcp_8h.html#a0bc206668135cd22295fdedd99f9820c',1,'survive_dhcp():&#160;tcp.h']]],
+  ['survive_5feth',['survive_eth',['../sock__ini_8c.html#a818bdb20fd5ecb8ef4554552076efb44',1,'survive_eth():&#160;sock_ini.c'],['../sock__ini_8h.html#a818bdb20fd5ecb8ef4554552076efb44',1,'survive_eth():&#160;sock_ini.c'],['../tcp_8h.html#a03c818b55878f21e6b4f1ce91eeab5a5',1,'survive_eth():&#160;tcp.h']]],
+  ['survive_5frarp',['survive_rarp',['../sock__ini_8c.html#af0d26b49dae390eb6d105a333e7f1377',1,'survive_rarp():&#160;sock_ini.c'],['../sock__ini_8h.html#af0d26b49dae390eb6d105a333e7f1377',1,'survive_rarp():&#160;sock_ini.c'],['../tcp_8h.html#afedb85aa6ff2b7acbde9a1cef5a05e4d',1,'survive_rarp():&#160;tcp.h']]]
+];

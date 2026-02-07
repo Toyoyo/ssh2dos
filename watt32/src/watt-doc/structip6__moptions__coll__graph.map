@@ -1,0 +1,8 @@
+<map id="ip6_moptions" name="ip6_moptions">
+<area shape="rect" id="node2" href="$structifnet.html" title="ifnet" alt="" coords="508,543,555,569"/>
+<area shape="rect" id="node3" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="5,423,103,449"/>
+<area shape="rect" id="node4" href="$structmbuf.html" title="mbuf" alt="" coords="182,250,233,277"/>
+<area shape="rect" id="node11" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="491,250,583,277"/>
+<area shape="rect" id="node12" href="$structif__data.html" title="if_data" alt="" coords="707,423,769,449"/>
+<area shape="rect" id="node13" href="$structtimeval.html" title="timeval" alt="" coords="607,250,671,277"/>
+</map>

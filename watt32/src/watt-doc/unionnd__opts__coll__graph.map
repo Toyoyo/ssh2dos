@@ -1,0 +1,7 @@
+<map id="nd_opts" name="nd_opts">
+<area shape="rect" id="node2" href="$structnd__opt__mtu.html" title="nd_opt_mtu" alt="" coords="512,55,603,81"/>
+<area shape="rect" id="node4" href="$structnd__opt__rd__hdr.html" title="nd_opt_rd_hdr" alt="" coords="505,135,609,161"/>
+<area shape="rect" id="node5" href="$structnd__opt__hdr.html" title="nd_opt_hdr" alt="" coords="363,189,450,216"/>
+<area shape="rect" id="node8" href="$structnd__opt__prefix__info.html" title="nd_opt_prefix_info" alt="" coords="653,344,781,371"/>
+<area shape="rect" id="node9" href="$structin6__addr.html" title="in6_addr" alt="" coords="371,513,442,540"/>
+</map>

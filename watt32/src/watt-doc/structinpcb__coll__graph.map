@@ -1,0 +1,23 @@
+<map id="inpcb" name="inpcb">
+<area shape="rect" id="node2" href="$structsocket.html" title="socket" alt="" coords="427,7,488,33"/>
+<area shape="rect" id="node10" href="$structifnet.html" title="ifnet" alt="" coords="785,1207,832,1233"/>
+<area shape="rect" id="node11" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="524,587,621,613"/>
+<area shape="rect" id="node12" href="$structmbuf.html" title="mbuf" alt="" coords="297,636,347,663"/>
+<area shape="rect" id="node19" href="$structifaddr.html" title="ifaddr" alt="" coords="1055,1096,1109,1123"/>
+<area shape="rect" id="node21" href="$structradix__node.html" title="radix_node" alt="" coords="279,1243,365,1269"/>
+<area shape="rect" id="node22" href="$structradix__mask.html" title="radix_mask" alt="" coords="528,1019,617,1045"/>
+<area shape="rect" id="node33" href="$structrouter__info.html" title="router_info" alt="" coords="1041,653,1123,680"/>
+<area shape="rect" id="node4" href="$structroute.html" title="route" alt="" coords="1480,1156,1531,1183"/>
+<area shape="rect" id="node5" href="$structsockaddr.html" title="sockaddr" alt="" coords="771,771,846,797"/>
+<area shape="rect" id="node8" href="$structrtentry.html" title="rtentry" alt="" coords="1284,1156,1343,1183"/>
+<area shape="rect" id="node15" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="276,1293,368,1320"/>
+<area shape="rect" id="node35" href="$structsockaddr__in.html" title="sockaddr_in" alt="" coords="1036,1869,1128,1896"/>
+<area shape="rect" id="node16" href="$structif__data.html" title="if_data" alt="" coords="542,2119,603,2145"/>
+<area shape="rect" id="node20" href="$structrt__metrics.html" title="rt_metrics" alt="" coords="656,1579,736,1605"/>
+<area shape="rect" id="node27" href="$structinpcbinfo.html" title="inpcbinfo" alt="" coords="285,2461,359,2488"/>
+<area shape="rect" id="node30" href="$structin__addr.html" title="in_addr" alt="" coords="777,1948,841,1975"/>
+<area shape="rect" id="node31" href="$structip__moptions.html" title="ip_moptions" alt="" coords="1691,1429,1783,1456"/>
+<area shape="rect" id="node32" href="$structin__multi.html" title="in_multi" alt="" coords="1472,1688,1539,1715"/>
+<area shape="rect" id="node34" href="$structin__ifaddr.html" title="in_ifaddr" alt="" coords="1278,1869,1349,1896"/>
+<area shape="rect" id="node17" href="$structtimeval.html" title="timeval" alt="" coords="290,2180,354,2207"/>
+</map>

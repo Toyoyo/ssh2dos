@@ -1,6 +1,6 @@
-System causeway
+System dos32a
 Name ssh2d386.exe
 Debug all
 Option map
-File ssh2dos.obj
+File ssh2dos.o
 Library crypto.lib,misc.lib,ssh.lib,vt100.lib,zlib_f.lib,wattcpwf.lib

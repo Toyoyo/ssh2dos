@@ -1,0 +1,7 @@
+<map id="ifnet" name="ifnet">
+<area shape="rect" id="node2" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="143,421,240,448"/>
+<area shape="rect" id="node3" href="$structmbuf.html" title="mbuf" alt="" coords="166,250,217,277"/>
+<area shape="rect" id="node10" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="366,250,458,277"/>
+<area shape="rect" id="node11" href="$structif__data.html" title="if_data" alt="" coords="742,421,804,448"/>
+<area shape="rect" id="node12" href="$structtimeval.html" title="timeval" alt="" coords="873,250,937,277"/>
+</map>

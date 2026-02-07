@@ -1,0 +1,337 @@
+warning: source /djgpp/include/ is not a readable file or directory... skipping.
+warning: source ./doxy-dox is not a readable file or directory... skipping.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp6.c:63: warning: Documentation block ended in the middle of a conditional section!
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp6.c:547: warning: found \endif without matching start command
+/home/fosco/src/SSH2DOS/watt32/src/lang.c:556: warning: the name `lang.l' supplied as the second argument in the \file statement is not an input file
+/home/fosco/src/SSH2DOS/watt32/inc/net/if_ether.h:1: warning: the name `net/if_ether.h' supplied as the second argument in the \file statement matches the following input files:
+   /home/fosco/src/SSH2DOS/watt32/inc/net/if_ether.h
+   /home/fosco/src/SSH2DOS/watt32/inc/netinet/if_ether.h
+Please use a more specific name by including a (larger) part of the path!
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp.h:42: warning: the name `ICMP_UNREACH' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
+/home/fosco/src/SSH2DOS/watt32/src/loopback.c:74: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcbootp.h:57: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcdhcp.h:121: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp.c:85: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp.c:99: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp.h:6: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp6.h:6: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcsed.h:20: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:345: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:517: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:319: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:325: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:330: warning: Illegal member name found.
+/home/fosco/src/SSH2DOS/watt32/src/config.h:62: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/config.h:271: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/fortify.c:278: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:10: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:11: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:12: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:13: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:14: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:15: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:16: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:17: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:18: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/ip4_in.h:24: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/loopback.c:116: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/misc.c:311: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/packet32.h:206: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.c:63: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.c:84: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.c:441: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.c:769: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.h:35: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.h:36: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.h:37: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.h:38: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcarp.h:53: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcbootp.h:16: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcdbug.c:75: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcdbug.orig.c:75: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcigmp.h:98: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcigmp.h:99: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.c:89: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.c:833: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:63: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:74: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:75: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:76: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:83: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:88: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcqueue.h:25: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcsed.c:120: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcsed.c:813: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcsed.h:13: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pcsed.h:129: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.c:2766: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:7: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:35: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:50: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:62: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:69: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:70: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:71: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:72: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:73: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:74: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:75: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:76: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:77: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:78: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:79: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:80: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:81: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:82: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:83: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:86: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:93: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/pctcp.h:178: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/socket.c:79: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:16: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:17: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:18: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:19: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:20: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:21: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:22: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:23: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:24: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:25: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:264: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:265: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:266: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:267: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:268: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/target.h:269: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:69: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:167: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:199: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:234: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:246: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:269: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:277: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:281: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:282: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:283: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:288: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:291: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:297: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:307: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:308: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:309: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:310: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:311: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:312: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:319: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:320: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:321: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:322: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:323: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:332: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:333: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:334: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:335: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:342: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:378: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:379: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:380: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:381: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:385: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:391: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:462: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/winadinf.c:51: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/winpkt.h:18: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:802: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:803: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:804: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:805: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:806: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:807: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:808: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:809: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:820: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:821: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:822: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:823: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:824: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:825: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/tcp.h:826: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/inc/sys/w32api.h:35: warning: found documented #define but ignoring it because ENABLE_PREPROCESSING is NO.
+
+/home/fosco/src/SSH2DOS/watt32/src/gettod.c:189: warning: documented symbol `int W32_CALL W32_NAMESPACE' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/gettod.c:225: warning: documented symbol `int W32_CALL W32_NAMESPACE' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/gettod.c:260: warning: documented symbol `int W32_CALL W32_NAMESPACE' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/loopback.c:74: warning: member with no name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcbootp.h:57: warning: documented symbol `struct bootp' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/pcdhcp.h:121: warning: documented symbol `struct dhcp' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp.c:85: warning: member with no name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp.c:99: warning: member with no name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp.h:6: warning: documented symbol `struct ICMP_unused' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/pcicmp6.h:6: warning: documented symbol `struct ICMP6_unused' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:62: warning: documented symbol `bit types' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/wattcp.h:517: warning: documented symbol `typedef struct udp_Socket' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/src/winmisc.c:946: warning: documented symbol `char * W32_NAMESPACE' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:268: warning: documented symbol `typedef unsigned char BYTE' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:269: warning: documented symbol `typedef unsigned short WORD' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:304: warning: documented symbol `typedef BYTE eth_address' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:305: warning: documented symbol `typedef BYTE tok_address' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:306: warning: documented symbol `typedef BYTE fddi_address' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:307: warning: documented symbol `typedef BYTE ax25_address' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:308: warning: documented symbol `typedef BYTE arcnet_address' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:309: warning: documented symbol `typedef BYTE ip6_address' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:317: warning: documented symbol `protocol handler callback type' was not declared or defined.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:319: warning: member with no name found.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:325: warning: member with no name found.
+/home/fosco/src/SSH2DOS/watt32/inc/sys/wtypes.h:330: warning: member with no name found.
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:40: warning: unexpected token TK_EOF as the argument of ref
+/home/fosco/src/SSH2DOS/watt32/src/timer.c:539: warning: unexpected token in comment block while parsing the argument of command retval
+/home/fosco/src/SSH2DOS/watt32/src/timer.c:348: warning: unexpected token in comment block while parsing the argument of command retval
+/home/fosco/src/SSH2DOS/watt32/src/winmisc.c:206: warning: Found unknown command `\r'
+/home/fosco/src/SSH2DOS/watt32/src/bind.c:51: warning: expected whitespace after ) command
+/home/fosco/src/SSH2DOS/watt32/src/language.c:6: warning: explicit link request to 'define' could not be resolved
+/home/fosco/src/SSH2DOS/watt32/src/language.c:9: warning: explicit link request to 'define' could not be resolved
+/home/fosco/src/SSH2DOS/watt32/src/pcpkt.h:40: warning: unexpected token TK_EOF as the argument of ref
+/home/fosco/src/SSH2DOS/watt32/src/bind.c:51: warning: expected whitespace after ) command
+/home/fosco/src/SSH2DOS/watt32/src/timer.c:539: warning: unexpected token in comment block while parsing the argument of command retval
+/home/fosco/src/SSH2DOS/watt32/src/timer.c:348: warning: unexpected token in comment block while parsing the argument of command retval
+/home/fosco/src/SSH2DOS/watt32/src/winmisc.c:206: warning: Found unknown command `\r'
+/home/fosco/src/SSH2DOS/watt32/src/sock_ini.c:29: warning: unable to resolve reference to `pkt_drvr_init' for \ref command
+/home/fosco/src/SSH2DOS/watt32/src/sock_ini.c:30: warning: unable to resolve reference to `winpcap_init' for \ref command
+/home/fosco/src/SSH2DOS/watt32/src/sock_ini.c:31: warning: unable to resolve reference to `swsvpkt_init' for \ref command

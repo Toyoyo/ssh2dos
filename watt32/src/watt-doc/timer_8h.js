@@ -1,0 +1,27 @@
+var timer_8h =
+[
+    [ "clockbits", "timer_8h.html#a0db358b608d64220cc2f3b91ead729f5", null ],
+    [ "delay", "timer_8h.html#a5a41da0c7432a41fbb4fbe7ee2cd848d", null ],
+    [ "elapsed_str", "timer_8h.html#a5ff3338488e3870ad2ff4a501cd40093", null ],
+    [ "exit_timer_isr", "timer_8h.html#a7db3d02b1c36b204371b96250a37d238", null ],
+    [ "get_cpu_speed", "timer_8h.html#abdfa0a8abc8f0232aad021d72395823f", null ],
+    [ "hires_timer", "timer_8h.html#a12cf62dd480f2ffc3ce0a9e14ff9bb48", null ],
+    [ "hms_str", "timer_8h.html#a49ffedb88d4fefb6d47dc32becb8a313", null ],
+    [ "init_timer_isr", "timer_8h.html#a357f082f64f6026f3f6e9adbe7b8f0d9", null ],
+    [ "init_timers", "timer_8h.html#aa0a564ad303951ed6ec0b1fb5d91d2a7", null ],
+    [ "millisec_clock", "timer_8h.html#a3e553640b346758e5c3d48ea41eb88ce", null ],
+    [ "ms_clock", "timer_8h.html#a35d0fd6ba7c0ce958a8b4353183ce929", null ],
+    [ "time_str", "timer_8h.html#ae095603ae33f2bad3800f22eeb255e1c", null ],
+    [ "win_get_perf_count", "timer_8h.html#ac029e8a7f95496ac05ea8f529af56cba", null ],
+    [ "clocks_per_usec", "timer_8h.html#ad7ebd92535059cd2b49a41fc8e5f9e5b", null ],
+    [ "has_8254", "timer_8h.html#aa64858191b08b2288602459409210be1", null ],
+    [ "has_rdtsc", "timer_8h.html#ae2f141ce200d6906e06576c769de6646", null ],
+    [ "num_cpus", "timer_8h.html#a64415fadf8d619bb3367650762094be3", null ],
+    [ "start_day", "timer_8h.html#a0cf2a6929a0ef4cb62b84690dedfee75", null ],
+    [ "start_time", "timer_8h.html#a5e08ea6afdd10d219db30022baa58739", null ],
+    [ "use_rdtsc", "timer_8h.html#a8f3e0bd5d300b641e4bdbd6b8ae8f722", null ],
+    [ "user_tick_active", "timer_8h.html#a8497b2650045f4d3ee02da15d89468c3", null ],
+    [ "user_tick_base", "timer_8h.html#a8576692849256b3485143c373a239312", null ],
+    [ "user_tick_msec", "timer_8h.html#a177d8610855ea3d166414dabfeaac7f2", null ],
+    [ "using_int8", "timer_8h.html#ab8c2acd5db4ee4d8cdc6bd85bdd4912a", null ]
+];

@@ -1,0 +1,4 @@
+<map id="ip6_packet" name="ip6_packet">
+<area shape="rect" id="node2" href="$structin6___header.html" title="in6_Header" alt="" coords="106,153,194,180"/>
+<area shape="rect" id="node6" href="$structudp___header.html" title="udp_Header" alt="" coords="228,153,320,180"/>
+</map>

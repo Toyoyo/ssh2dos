@@ -1,0 +1,38 @@
+var x32vm_8c =
+[
+    [ "RMCB_record", "struct_r_m_c_b__record.html", "struct_r_m_c_b__record" ],
+    [ "RMCB_record", "x32vm_8c.html#af6885a23122354c13bcaed11023e740b", null ],
+    [ "ReturnType", "x32vm_8c.html#a36a419f0b50a0c1d2d4cf712e0ba64cc", [
+      [ "RETF", "x32vm_8c.html#a36a419f0b50a0c1d2d4cf712e0ba64ccabcee24ed8975c75403cce7c2f3011b14", null ],
+      [ "IRET", "x32vm_8c.html#a36a419f0b50a0c1d2d4cf712e0ba64cca64c3afd1e74e561946bcd51017344066", null ]
+    ] ],
+    [ "_dx_alloc_rmode_wrapper", "x32vm_8c.html#a19584c2553217a8c4f20abcc6c0f137b", null ],
+    [ "_dx_alloc_rmode_wrapper_iret", "x32vm_8c.html#a5ce83fead48121440f5a340e0dd7baaa", null ],
+    [ "_dx_alloc_rmode_wrapper_retf", "x32vm_8c.html#a050fbeb334f6fb44c6c1f29b9cdd6f42", null ],
+    [ "_dx_apmiv_set", "x32vm_8c.html#abbeba91353a6211402a18a408a3d7a9a", null ],
+    [ "_dx_call_real", "x32vm_8c.html#a9b795ec66a1d65c6f9379413934ee5d7", null ],
+    [ "_dx_free_rmode_wrapper", "x32vm_8c.html#a33c3f7e867f2a3b6b2341113d23557e3", null ],
+    [ "_dx_lock_pgs", "x32vm_8c.html#afdbce03f0b027309e29ac44715c0ef9b", null ],
+    [ "_dx_lock_pgsn", "x32vm_8c.html#aec62e5db7aae52763695e96bcb9a44e3", null ],
+    [ "_dx_pmiv_get", "x32vm_8c.html#afe71be085c72d817e52641c8a98af1ef", null ],
+    [ "_dx_real_above", "x32vm_8c.html#af71f599418890f6936c6b61306c898dc", null ],
+    [ "_dx_real_alloc", "x32vm_8c.html#a945d41cd833d45f760e73e8e485994e2", null ],
+    [ "_dx_real_free", "x32vm_8c.html#a5e3cb9357273f1bc5f09d35d353ecea3", null ],
+    [ "_dx_real_int", "x32vm_8c.html#a84feb2e67e5dbcb091ef8395f060bd28", null ],
+    [ "_dx_rmiv_get", "x32vm_8c.html#a923762ee17cd9868c5ba60916588d9cc", null ],
+    [ "_dx_rmiv_set", "x32vm_8c.html#a814a399d3c0c818e34c1643495d1853b", null ],
+    [ "_dx_rmlink_get", "x32vm_8c.html#a8f59c44981257d7e850b929bbde84312", null ],
+    [ "_dx_ulock_pgsn", "x32vm_8c.html#a6005505954978b28b418175ed25c7f5b", null ],
+    [ "FillRealMem", "x32vm_8c.html#abc609774845f392641062f76bbdcccd5", null ],
+    [ "normalize", "x32vm_8c.html#ac0cb5f1fd42bf9fab24c5fe42102152e", null ],
+    [ "PmGlueEnd", "x32vm_8c.html#a59e92c33a12e5037b4e4c45df51d3013", null ],
+    [ "PmodeGlue", "x32vm_8c.html#ac2a3f96764b612ed426b5f6a69a7358b", null ],
+    [ "PmodeGlue", "x32vm_8c.html#ac6fead8ad01d1ca865737f501f3128bf", null ],
+    [ "PokeRealWord", "x32vm_8c.html#a14eebcbe8b1eba2a85c2a5f90e38d5ca", null ],
+    [ "ReadRealMem", "x32vm_8c.html#ac5966ffa05d3f81a93381853090ad3d3", null ],
+    [ "stack_rewind", "x32vm_8c.html#aa9e639123d3135c9b01756d825cac950", null ],
+    [ "WriteRealMem", "x32vm_8c.html#a68e0cc54c06fe6dd62fb6da31236eed4", null ],
+    [ "exc_app_start", "x32vm_8c.html#a3026c6d145379cc8eb371a96e85cbe2a", null ],
+    [ "num_wrappers", "x32vm_8c.html#ac609762842c8b699b39c2c7a2dc71b69", null ],
+    [ "rmcb", "x32vm_8c.html#a266fdd48e18b05a66d2e0c7e8bb4dc48", null ]
+];

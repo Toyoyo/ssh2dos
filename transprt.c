@@ -38,6 +38,7 @@
 #include "ssh.h"
 #include "transprt.h"
 #include "keyio.h"
+#include "ed25519.h"
 #if defined (MEMWATCH)
  #include "memwatch.h"
 #endif
@@ -339,7 +340,7 @@ unsigned char cookie[16];
    SSH_pkt_init(SSH_MSG_KEXINIT);
    SSH_putdata(cookie, 16); 
    SSH_putstring("diffie-hellman-group14-sha256");
-   SSH_putstring("ssh-rsa");
+   SSH_putstring("ssh-ed25519,ssh-rsa");
    SSH_putstring("aes128-ctr"); 
    SSH_putstring("aes128-ctr"); 
    SSH_putstring("hmac-sha2-256"); 
@@ -380,6 +381,8 @@ static short SSH2_DHExchange(void)
 Bignum e, f, K;
 char *hostkeydata;
 unsigned long hostkeylen;
+char *sigdata;
+unsigned long siglen;
 unsigned char keyspace[64];
 unsigned char exchange_hash[32];
 int kexinit, kexreply;
@@ -408,6 +411,7 @@ int kexinit, kexreply;
 
    SSH_getstring(&hostkeydata, &hostkeylen);
    f = SSH_getmp();
+   SSH_getstring(&sigdata, &siglen);
    K = dh_find_K(f);
 
    sha256_string(&exhash256, hostkeydata, hostkeylen);
@@ -416,6 +420,79 @@ int kexinit, kexreply;
    sha256_mpint(&exhash256, K);
    SHA256_Final(&exhash256, exchange_hash);
 
+   /* Verify host key signature on exchange hash */
+   if(hostkeylen >= 15 &&
+      GET_32BIT_MSB_FIRST(hostkeydata) == 11 &&
+      memcmp(hostkeydata + 4, "ssh-ed25519", 11) == 0) {
+      /* Ed25519 host key: parse public key and signature, then verify */
+      unsigned char *ed_pubkey;
+      unsigned long ed_pubkey_len;
+      unsigned long sig_alg_len;
+      unsigned char *sig_inner;
+      unsigned long sig_inner_len;
+      char *p;
+      int plen;
+
+      /* Extract 32-byte public key from host key blob */
+      p = hostkeydata + 4 + 11;  /* skip algorithm string */
+      plen = hostkeylen - 4 - 11;
+      if(plen < 4){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Invalid Ed25519 host key");
+	   return(1);
+      }
+      ed_pubkey_len = GET_32BIT_MSB_FIRST(p);
+      p += 4; plen -= 4;
+      if(ed_pubkey_len != 32 || plen < 32){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Invalid Ed25519 public key length");
+	   return(1);
+      }
+      ed_pubkey = (unsigned char *)p;
+
+      /* Parse signature blob: string algorithm + string sig_data */
+      p = sigdata;
+      plen = siglen;
+      if(plen < 4){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Invalid signature blob");
+	   return(1);
+      }
+      sig_alg_len = GET_32BIT_MSB_FIRST(p);
+      p += 4; plen -= 4;
+      if(plen < (int)sig_alg_len){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Invalid signature blob");
+	   return(1);
+      }
+      p += sig_alg_len; plen -= sig_alg_len;  /* skip algorithm string */
+
+      if(plen < 4){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Invalid signature blob");
+	   return(1);
+      }
+      sig_inner_len = GET_32BIT_MSB_FIRST(p);
+      p += 4; plen -= 4;
+      if(sig_inner_len != 64 || plen < 64){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Invalid Ed25519 signature length");
+	   return(1);
+      }
+      sig_inner = (unsigned char *)p;
+
+      if(!ed25519_verify(ed_pubkey, sig_inner, exchange_hash, 32)){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Ed25519 host key signature verification failed");
+	   return(1);
+      }
+      if(Configuration & VERBOSE_MODE)
+	   puts("Host key verified (ssh-ed25519)");
+   } else {
+      /* RSA or other key type: accept without verification (legacy behavior) */
+      if(Configuration & VERBOSE_MODE)
+	   puts("Host key accepted (ssh-rsa)");
+   }
 
    dh_cleanup();
    freebn(e);

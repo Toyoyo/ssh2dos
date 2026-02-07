@@ -1,0 +1,14 @@
+<map id="Socket" name="Socket">
+<area shape="rect" id="node2" href="$struct__raw___socket.html" title="_raw_Socket" alt="" coords="250,301,349,328"/>
+<area shape="rect" id="node3" href="$structin___header.html" title="in_Header" alt="" coords="19,168,101,195"/>
+<area shape="rect" id="node13" href="$structrecv__buf.html" title="recv_buf" alt="" coords="263,1515,335,1541"/>
+<area shape="rect" id="node20" href="$struct__raw6___socket.html" title="_raw6_Socket" alt="" coords="508,732,613,759"/>
+<area shape="rect" id="node21" href="$structin6___header.html" title="in6_Header" alt="" coords="255,704,343,731"/>
+<area shape="rect" id="node22" href="$structtcp___socket.html" title="tcp_Socket" alt="" coords="255,1643,343,1669"/>
+<area shape="rect" id="node25" href="$structpkt__ringbuf.html" title="pkt_ringbuf" alt="" coords="256,1285,343,1312"/>
+<area shape="rect" id="node27" href="$structsock__packet__buf.html" title="sock_packet_buf" alt="" coords="239,1693,360,1720"/>
+<area shape="rect" id="node9" href="$structsockaddr__in.html" title="sockaddr_in" alt="" coords="515,2105,607,2132"/>
+<area shape="rect" id="node17" href="$structip__opts.html" title="ip_opts" alt="" coords="529,2024,593,2051"/>
+<area shape="rect" id="node11" href="$structin__addr.html" title="in_addr" alt="" coords="267,2148,331,2175"/>
+<area shape="rect" id="node24" href="$structsock__packet__pool.html" title="sock_packet_pool" alt="" coords="497,1512,624,1539"/>
+</map>

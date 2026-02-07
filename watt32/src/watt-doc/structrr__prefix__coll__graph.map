@@ -1,0 +1,8 @@
+<map id="rr_prefix" name="rr_prefix">
+<area shape="rect" id="node4" href="$structin6__prflags.html" title="in6_prflags" alt="" coords="291,289,377,316"/>
+<area shape="rect" id="node5" href="$structin6__prflags_1_1prf__ra.html" title="in6_prflags::prf_ra" alt="" coords="5,155,132,181"/>
+<area shape="rect" id="node7" href="$structin6__prflags_1_1prf__rr.html" title="in6_prflags::prf_rr" alt="" coords="289,155,411,181"/>
+<area shape="rect" id="node8" href="$structrr__prefix_1_1rp__stateflags.html" title="rr_prefix::rp_stateflags" alt="" coords="478,230,630,257"/>
+<area shape="rect" id="node9" href="$structsockaddr__in6.html" title="sockaddr_in6" alt="" coords="826,289,925,316"/>
+<area shape="rect" id="node11" href="$structin6__addr.html" title="in6_addr" alt="" coords="891,155,961,181"/>
+</map>

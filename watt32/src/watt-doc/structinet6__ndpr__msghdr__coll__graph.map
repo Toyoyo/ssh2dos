@@ -1,0 +1,6 @@
+<map id="inet6_ndpr_msghdr" name="inet6_ndpr_msghdr">
+<area shape="rect" id="node2" href="$structin6__prflags.html" title="in6_prflags" alt="" coords="541,249,627,276"/>
+<area shape="rect" id="node3" href="$structin6__prflags_1_1prf__ra.html" title="in6_prflags::prf_ra" alt="" coords="285,249,412,276"/>
+<area shape="rect" id="node5" href="$structin6__prflags_1_1prf__rr.html" title="in6_prflags::prf_rr" alt="" coords="287,312,410,339"/>
+<area shape="rect" id="node6" href="$structin6__addr.html" title="in6_addr" alt="" coords="313,504,384,531"/>
+</map>

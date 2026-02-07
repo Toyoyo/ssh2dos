@@ -1,0 +1,7 @@
+<map id="CLIENT" name="CLIENT">
+<area shape="rect" id="node2" href="$struct_c_l_i_e_n_t_1_1clnt__ops.html" title="CLIENT::clnt_ops" alt="" coords="181,124,308,151"/>
+<area shape="rect" id="node8" href="$struct_a_u_t_h_1_1auth__ops.html" title="AUTH::auth_ops" alt="" coords="409,124,529,151"/>
+<area shape="rect" id="node7" href="$struct_a_u_t_h.html" title="AUTH" alt="" coords="565,228,623,255"/>
+<area shape="rect" id="node10" href="$uniondes__block.html" title="des_block" alt="" coords="945,124,1027,151"/>
+<area shape="rect" id="node13" href="$structopaque__auth.html" title="opaque_auth" alt="" coords="782,124,878,151"/>
+</map>

@@ -1,6 +1,6 @@
-System causeway
+System dos32a
 Name tel386.exe
 Debug all
 Option map
-File telnet.obj
+File telnet.o
 Library misc.lib,vt100.lib,wattcpwf.lib

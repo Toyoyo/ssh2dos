@@ -1,0 +1,6 @@
+<map id="sctp_SendableInit" name="sctp_SendableInit">
+<area shape="rect" id="node2" href="$structsctp___header.html" title="sctp_Header" alt="" coords="191,124,287,151"/>
+<area shape="rect" id="node6" href="$structsctp___initiation.html" title="sctp_Initiation" alt="" coords="312,124,414,151"/>
+<area shape="rect" id="node7" href="$structsctp___chunk_desc.html" title="sctp_ChunkDesc" alt="" coords="462,124,584,151"/>
+<area shape="rect" id="node5" href="$structsctp___unified_init.html" title="sctp_UnifiedInit" alt="" coords="306,213,420,240"/>
+</map>

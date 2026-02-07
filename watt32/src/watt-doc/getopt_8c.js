@@ -1,0 +1,26 @@
+var getopt_8c =
+[
+    [ "_w_watt_getopt", "getopt_8c.html#a4fe38fea67d0b32ec38071bec0d684bf", null ],
+    [ "watt_getopt", "getopt_8c.html#a1660010cf498dcadeac63c749dc9dfed", null ],
+    [ "_w_empty", "getopt_8c.html#ac11fde1617022142625ce590f7b8f1b4", null ],
+    [ "_w_next_opt", "getopt_8c.html#ab453c66dac4edeacc8d5ff8350bf11b3", null ],
+    [ "_w_non_options", "getopt_8c.html#aa5ff4529785a512a8146c555a551a12d", null ],
+    [ "_w_options", "getopt_8c.html#aeeb55a94a4abce6252da70c44077e3f0", null ],
+    [ "_w_sw_char", "getopt_8c.html#a684f74475ae844bde4aead462ed9c7d7", null ],
+    [ "_w_watt_optarg", "getopt_8c.html#a8524dd9262661ca49962f9a72223a924", null ],
+    [ "_w_watt_optswchar", "getopt_8c.html#acaa037f3527d52e9b07e5be9862aa85d", null ],
+    [ "done", "getopt_8c.html#a7a770b6d2804c86ef834ee04c4ab5ae3", null ],
+    [ "empty", "getopt_8c.html#a1b99e25621a57c0d9852de51a4b1f72c", null ],
+    [ "next_opt", "getopt_8c.html#a3d9469318080df65cddd893ddd25737b", null ],
+    [ "non_options", "getopt_8c.html#af98779bc131b7857b2a88d83a1bd9b6b", null ],
+    [ "non_options_count", "getopt_8c.html#ae69acab17017e2e90dd8de0ee2c17e00", null ],
+    [ "options", "getopt_8c.html#afefe8f715b91a6c68097ec7503dd6020", null ],
+    [ "options_count", "getopt_8c.html#a9822993e1d8e5a0451b6f777540fe8f5", null ],
+    [ "sw_char", "getopt_8c.html#acc537306713270b71470b5bfbe9ce42c", null ],
+    [ "watt_optarg", "getopt_8c.html#af9701d0269535ea3bbf6040cb3d7f90e", null ],
+    [ "watt_opterr", "getopt_8c.html#a761dac4c3506126a8ea245e898172a5a", null ],
+    [ "watt_optind", "getopt_8c.html#a522476eaeea138834f6f5b8e2539347d", null ],
+    [ "watt_optmode", "getopt_8c.html#a7b5918958478cedde6a3f2b4e58a513d", null ],
+    [ "watt_optopt", "getopt_8c.html#a8c37300117229c0a861f400f5519664e", null ],
+    [ "watt_optswchar", "getopt_8c.html#a89e88215594fa977c0d693f49c915879", null ]
+];

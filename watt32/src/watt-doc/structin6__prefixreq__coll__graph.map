@@ -1,0 +1,7 @@
+<map id="in6_prefixreq" name="in6_prefixreq">
+<area shape="rect" id="node3" href="$structin6__prflags.html" title="in6_prflags" alt="" coords="307,304,393,331"/>
+<area shape="rect" id="node4" href="$structin6__prflags_1_1prf__ra.html" title="in6_prflags::prf_ra" alt="" coords="5,155,132,181"/>
+<area shape="rect" id="node6" href="$structin6__prflags_1_1prf__rr.html" title="in6_prflags::prf_rr" alt="" coords="289,155,411,181"/>
+<area shape="rect" id="node7" href="$structsockaddr__in6.html" title="sockaddr_in6" alt="" coords="690,304,789,331"/>
+<area shape="rect" id="node9" href="$structin6__addr.html" title="in6_addr" alt="" coords="755,155,825,181"/>
+</map>

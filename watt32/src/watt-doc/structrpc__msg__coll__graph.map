@@ -1,0 +1,7 @@
+<map id="rpc_msg" name="rpc_msg">
+<area shape="rect" id="node2" href="$structcall__body.html" title="call_body" alt="" coords="504,229,581,256"/>
+<area shape="rect" id="node3" href="$structopaque__auth.html" title="opaque_auth" alt="" coords="225,257,321,284"/>
+<area shape="rect" id="node15" href="$structaccepted__reply.html" title="accepted_reply" alt="" coords="487,411,598,437"/>
+<area shape="rect" id="node8" href="$structreply__body.html" title="reply_body" alt="" coords="708,615,793,641"/>
+<area shape="rect" id="node9" href="$structrejected__reply.html" title="rejected_reply" alt="" coords="491,709,594,736"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="strip_softc" name="strip_softc">
+<area shape="rect" id="node2" href="$structslcompress.html" title="slcompress" alt="" coords="557,704,646,731"/>
+<area shape="rect" id="node8" href="$structcstate.html" title="cstate" alt="" coords="756,569,815,596"/>
+<area shape="rect" id="node13" href="$structtcp___header.html" title="tcp_Header" alt="" coords="466,250,556,277"/>
+<area shape="rect" id="node16" href="$structifnet.html" title="ifnet" alt="" coords="1690,704,1737,731"/>
+<area shape="rect" id="node17" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="1517,569,1614,596"/>
+<area shape="rect" id="node18" href="$structmbuf.html" title="mbuf" alt="" coords="1472,250,1523,277"/>
+<area shape="rect" id="node21" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="1754,250,1846,277"/>
+<area shape="rect" id="node22" href="$structif__data.html" title="if_data" alt="" coords="1956,569,2018,596"/>
+<area shape="rect" id="node23" href="$structtimeval.html" title="timeval" alt="" coords="2046,250,2110,277"/>
+</map>

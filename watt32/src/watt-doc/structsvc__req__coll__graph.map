@@ -1,0 +1,7 @@
+<map id="svc_req" name="svc_req">
+<area shape="rect" id="node2" href="$struct_s_v_c_x_p_r_t.html" title="SVCXPRT" alt="" coords="533,352,619,379"/>
+<area shape="rect" id="node4" href="$structsockaddr__in.html" title="sockaddr_in" alt="" coords="762,239,854,266"/>
+<area shape="rect" id="node8" href="$structopaque__auth.html" title="opaque_auth" alt="" coords="439,239,535,266"/>
+<area shape="rect" id="node5" href="$structin__addr.html" title="in_addr" alt="" coords="840,96,904,123"/>
+<area shape="rect" id="node10" href="$struct_s_v_c_x_p_r_t_1_1xp__ops.html" title="SVCXPRT::xp_ops" alt="" coords="164,239,300,266"/>
+</map>

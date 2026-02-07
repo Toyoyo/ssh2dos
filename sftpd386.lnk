@@ -1,6 +1,6 @@
-System causeway
+System dos32a
 Name sftpd386.exe
 Debug all
 Option map
-File sftpdos.obj,sftp.obj
+File sftpdos.o,sftp.o
 Library crypto.lib,misc.lib,ssh.lib,vt100.lib,zlib_f.lib,wattcpwf.lib

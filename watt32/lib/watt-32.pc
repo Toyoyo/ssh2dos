@@ -1,0 +1,11 @@
+  prefix=/home/fosco/src/SSH2DOS/watt32
+  exec_prefix=/home/fosco/src/SSH2DOS/watt32
+  libdir=${exec_prefix}/lib
+  includedir=${exec_prefix}/inc
+  watt_module_version=2.2.11
+  URL: http://www.watt-32.net
+  Name: Watt-32
+  Description: Watt-32 tcp/ip stack for CygWin/Win32
+  Version: 2.2.11
+  Cflags: -I${includedir} -DWATT32
+  Libs: ${libdir}/libwatt32-cygwin.dll.a

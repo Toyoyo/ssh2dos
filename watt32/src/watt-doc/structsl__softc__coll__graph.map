@@ -1,0 +1,11 @@
+<map id="sl_softc" name="sl_softc">
+<area shape="rect" id="node2" href="$structslcompress.html" title="slcompress" alt="" coords="556,719,646,745"/>
+<area shape="rect" id="node8" href="$structcstate.html" title="cstate" alt="" coords="756,577,814,603"/>
+<area shape="rect" id="node13" href="$structtcp___header.html" title="tcp_Header" alt="" coords="467,250,556,277"/>
+<area shape="rect" id="node16" href="$structifnet.html" title="ifnet" alt="" coords="1690,719,1736,745"/>
+<area shape="rect" id="node17" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="1516,577,1614,603"/>
+<area shape="rect" id="node18" href="$structmbuf.html" title="mbuf" alt="" coords="1472,250,1522,277"/>
+<area shape="rect" id="node21" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="1754,250,1846,277"/>
+<area shape="rect" id="node22" href="$structif__data.html" title="if_data" alt="" coords="1956,577,2017,603"/>
+<area shape="rect" id="node23" href="$structtimeval.html" title="timeval" alt="" coords="2045,250,2109,277"/>
+</map>

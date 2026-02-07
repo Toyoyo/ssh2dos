@@ -1,0 +1,18 @@
+<map id="vif" name="vif">
+<area shape="rect" id="node2" href="$structtbf.html" title="tbf" alt="" coords="552,733,591,760"/>
+<area shape="rect" id="node3" href="$structmbuf.html" title="mbuf" alt="" coords="295,831,346,857"/>
+<area shape="rect" id="node15" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="523,657,620,684"/>
+<area shape="rect" id="node11" href="$structsockaddr.html" title="sockaddr" alt="" coords="769,1536,844,1563"/>
+<area shape="rect" id="node12" href="$structrtentry.html" title="rtentry" alt="" coords="1130,1375,1189,1401"/>
+<area shape="rect" id="node14" href="$structifnet.html" title="ifnet" alt="" coords="783,1208,830,1235"/>
+<area shape="rect" id="node18" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="275,1356,367,1383"/>
+<area shape="rect" id="node22" href="$structradix__node.html" title="radix_node" alt="" coords="278,1799,363,1825"/>
+<area shape="rect" id="node23" href="$structradix__mask.html" title="radix_mask" alt="" coords="527,1575,616,1601"/>
+<area shape="rect" id="node9" href="$structsocket.html" title="socket" alt="" coords="425,7,487,33"/>
+<area shape="rect" id="node20" href="$structifaddr.html" title="ifaddr" alt="" coords="973,1215,1028,1241"/>
+<area shape="rect" id="node19" href="$structif__data.html" title="if_data" alt="" coords="541,1151,602,1177"/>
+<area shape="rect" id="node21" href="$structrt__metrics.html" title="rt_metrics" alt="" coords="655,472,735,499"/>
+<area shape="rect" id="node28" href="$structin__addr.html" title="in_addr" alt="" coords="872,323,936,349"/>
+<area shape="rect" id="node7" href="$structtimeval.html" title="timeval" alt="" coords="289,1243,353,1269"/>
+<area shape="rect" id="node10" href="$structroute.html" title="route" alt="" coords="1271,1375,1321,1401"/>
+</map>

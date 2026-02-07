@@ -1,7 +1,7 @@
 #ifndef _PUBKEY_H
 #define _PUBKEY_H
 
-enum { OSSH_DSA, OSSH_RSA };
+enum { OSSH_DSA, OSSH_RSA, OSSH_ECDSA };
 struct openssh_key {
     int type;
     int encrypted;
@@ -14,6 +14,9 @@ struct ssh_signkey {
    unsigned char *(*public_blob) (void *, int *);
    void *(*createkey) (unsigned char *, int , unsigned char *, int);
    unsigned char *(*sign) (void *, char *, int, int *);
+   int (*verify) (unsigned char *, unsigned long,
+                  unsigned char *, unsigned long,
+                  unsigned char *, unsigned long);
    char *name;
 };
 

@@ -291,5 +291,6 @@ const struct ssh_signkey ssh_rsa = {
     rsa2_public_blob,
     rsa2_createkey,
     rsa2_sign,
+    NULL,
     "ssh-rsa",
 };

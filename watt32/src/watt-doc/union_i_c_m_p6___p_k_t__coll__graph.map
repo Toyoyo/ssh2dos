@@ -1,0 +1,11 @@
+<map id="ICMP6_PKT" name="ICMP6_PKT">
+<area shape="rect" id="node2" href="$struct_i_c_m_p6__pointer.html" title="ICMP6_pointer" alt="" coords="227,499,337,525"/>
+<area shape="rect" id="node7" href="$struct_i_c_m_p6__nd__sol.html" title="ICMP6_nd_sol" alt="" coords="228,1039,336,1065"/>
+<area shape="rect" id="node9" href="$struct_i_c_m_p6___m_t_u.html" title="ICMP6_MTU" alt="" coords="233,620,331,647"/>
+<area shape="rect" id="node10" href="$struct_i_c_m_p6__echo.html" title="ICMP6_echo" alt="" coords="233,755,331,781"/>
+<area shape="rect" id="node11" href="$struct_i_c_m_p6__route__adv.html" title="ICMP6_route_adv" alt="" coords="219,379,345,405"/>
+<area shape="rect" id="node12" href="$struct_i_c_m_p6__nd__adv.html" title="ICMP6_nd_adv" alt="" coords="226,1217,338,1244"/>
+<area shape="rect" id="node13" href="$struct_i_c_m_p6__route__sol.html" title="ICMP6_route_sol" alt="" coords="221,125,343,152"/>
+<area shape="rect" id="node14" href="$struct_i_c_m_p6__nd__ra.html" title="ICMP6_nd_ra" alt="" coords="231,875,333,901"/>
+<area shape="rect" id="node6" href="$struct_i_c_m_p6__unused.html" title="ICMP6_unused" alt="" coords="226,328,338,355"/>
+</map>

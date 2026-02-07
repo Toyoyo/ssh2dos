@@ -1,0 +1,27 @@
+var structipsecstat =
+[
+    [ "in_ahauthfail", "structipsecstat.html#a1c52a5cd80929ac4fb5738f4b6c86ca3", null ],
+    [ "in_ahauthsucc", "structipsecstat.html#ab553a1722999021f130d7f4e203ad4b1", null ],
+    [ "in_ahhist", "structipsecstat.html#ac075bce798c3f8ffff81cd9b85c51971", null ],
+    [ "in_ahreplay", "structipsecstat.html#a7a521b22b16269f1c2cefce223d454d2", null ],
+    [ "in_badspi", "structipsecstat.html#a6eb93ac366e6b9643130e980f7b6cee4", null ],
+    [ "in_comphist", "structipsecstat.html#a3c2296295269776d61401d2a503ef002", null ],
+    [ "in_espauthfail", "structipsecstat.html#a94934d1d7322c718fc102a72dd5a992c", null ],
+    [ "in_espauthsucc", "structipsecstat.html#aa71f7b379fdc3d71ee59c71a419760ef", null ],
+    [ "in_esphist", "structipsecstat.html#ac1bdad79c113f3fd3ca374a886685a14", null ],
+    [ "in_espreplay", "structipsecstat.html#a8ba30db7cf5db414778d6e49cd7fd490", null ],
+    [ "in_inval", "structipsecstat.html#acee7b5b746dadbbd00164717d4877b74", null ],
+    [ "in_nomem", "structipsecstat.html#a52497792b54ca352a007b5518bd0693e", null ],
+    [ "in_nosa", "structipsecstat.html#a6e562f0e8c85e62b111ae26a1558961e", null ],
+    [ "in_polvio", "structipsecstat.html#adf0cd20bf6e2d1c26b55af0ee085027e", null ],
+    [ "in_success", "structipsecstat.html#a13e466f207320906044272020171fb3b", null ],
+    [ "out_ahhist", "structipsecstat.html#a83b1ec0d367ce87efc8e47bc0eebfa29", null ],
+    [ "out_comphist", "structipsecstat.html#abf52297214e4a6c4ec204e36e3d6285c", null ],
+    [ "out_esphist", "structipsecstat.html#a4ed148e8647b0f825b6ae8288db01f48", null ],
+    [ "out_inval", "structipsecstat.html#a02d8bbfb9dff7ac844a59519f8f1fc21", null ],
+    [ "out_nomem", "structipsecstat.html#a103c075c1e213181a02d46e6af34811e", null ],
+    [ "out_noroute", "structipsecstat.html#a24d9bc0b329f2e947316d0ead09cbdce", null ],
+    [ "out_nosa", "structipsecstat.html#a8fee83af124134d28f8572dc4c9428bd", null ],
+    [ "out_polvio", "structipsecstat.html#a3d88c0e7f1bdf01c0705254985d79c94", null ],
+    [ "out_success", "structipsecstat.html#ae136dccc538ddec3eb5d99ff12066f2c", null ]
+];

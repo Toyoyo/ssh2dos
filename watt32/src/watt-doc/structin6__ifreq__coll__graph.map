@@ -1,0 +1,7 @@
+<map id="in6_ifreq" name="in6_ifreq">
+<area shape="rect" id="node2" href="$structin6__ifstat.html" title="in6_ifstat" alt="" coords="610,184,685,211"/>
+<area shape="rect" id="node4" href="$structicmp6__ifstat.html" title="icmp6_ifstat" alt="" coords="601,281,694,308"/>
+<area shape="rect" id="node7" href="$structin6__addr.html" title="in6_addr" alt="" coords="312,356,383,383"/>
+<area shape="rect" id="node18" href="$structsockaddr__in6.html" title="sockaddr_in6" alt="" coords="598,497,697,524"/>
+<area shape="rect" id="node16" href="$structin6__addrlifetime.html" title="in6_addrlifetime" alt="" coords="291,831,404,857"/>
+</map>

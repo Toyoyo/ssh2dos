@@ -1,0 +1,22 @@
+<map id="ip6_pktopts" name="ip6_pktopts">
+<area shape="rect" id="node2" href="$structsockaddr.html" title="sockaddr" alt="" coords="812,1660,887,1687"/>
+<area shape="rect" id="node18" href="$structrtentry.html" title="rtentry" alt="" coords="1209,1500,1267,1527"/>
+<area shape="rect" id="node28" href="$structifaddr.html" title="ifaddr" alt="" coords="1024,1448,1079,1475"/>
+<area shape="rect" id="node6" href="$structmbuf.html" title="mbuf" alt="" coords="337,1736,387,1763"/>
+<area shape="rect" id="node20" href="$structifnet.html" title="ifnet" alt="" coords="826,1448,873,1475"/>
+<area shape="rect" id="node24" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="316,1617,408,1644"/>
+<area shape="rect" id="node30" href="$structradix__node.html" title="radix_node" alt="" coords="319,2277,405,2304"/>
+<area shape="rect" id="node31" href="$structradix__mask.html" title="radix_mask" alt="" coords="569,2104,658,2131"/>
+<area shape="rect" id="node5" href="$structip6__dest.html" title="ip6_dest" alt="" coords="702,523,773,549"/>
+<area shape="rect" id="node8" href="$structin6__pktinfo.html" title="in6_pktinfo" alt="" coords="571,661,656,688"/>
+<area shape="rect" id="node9" href="$structin6__addr.html" title="in6_addr" alt="" coords="327,187,397,213"/>
+<area shape="rect" id="node15" href="$structip6__hbh.html" title="ip6_hbh" alt="" coords="913,611,980,637"/>
+<area shape="rect" id="node25" href="$structif__data.html" title="if_data" alt="" coords="583,1249,644,1276"/>
+<area shape="rect" id="node29" href="$structrt__metrics.html" title="rt_metrics" alt="" coords="457,873,537,900"/>
+<area shape="rect" id="node36" href="$structsockaddr__in6.html" title="sockaddr_in6" alt="" coords="564,359,663,385"/>
+<area shape="rect" id="node38" href="$structip6__rthdr.html" title="ip6_rthdr" alt="" coords="461,792,533,819"/>
+<area shape="rect" id="node21" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="565,1556,662,1583"/>
+<area shape="rect" id="node16" href="$structip6po__rhinfo.html" title="ip6po_rhinfo" alt="" coords="1632,740,1724,767"/>
+<area shape="rect" id="node17" href="$structroute__in6.html" title="route_in6" alt="" coords="1416,713,1491,740"/>
+<area shape="rect" id="node26" href="$structtimeval.html" title="timeval" alt="" coords="330,1311,394,1337"/>
+</map>

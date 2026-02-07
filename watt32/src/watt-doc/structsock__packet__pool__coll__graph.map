@@ -1,0 +1,4 @@
+<map id="sock_packet_pool" name="sock_packet_pool">
+<area shape="rect" id="node2" href="$structpkt__ringbuf.html" title="pkt_ringbuf" alt="" coords="159,153,246,180"/>
+<area shape="rect" id="node6" href="$structsock__packet__buf.html" title="sock_packet_buf" alt="" coords="295,153,417,180"/>
+</map>

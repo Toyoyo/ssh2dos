@@ -1,0 +1,27 @@
+var gethost6_8c =
+[
+    [ "_endhostent6", "gethost6_8c.html#a5515c0edb5a929fb2a677846e78c37c1", null ],
+    [ "add_hostent6", "gethost6_8c.html#a75751792e7d511a448b0f657662f2bb5", null ],
+    [ "CloseHost6File", "gethost6_8c.html#a40dc7f59efa192e224e2e809b207685f", null ],
+    [ "DumpHosts6Cache", "gethost6_8c.html#a27613ecb9d17fabf7b13a17359f78050", null ],
+    [ "endhostent6", "gethost6_8c.html#ad2cee35c4b986368fe2c606e6a038f6d", null ],
+    [ "fill_hostent6", "gethost6_8c.html#a4b16804af4ffdde4b11d610b334809d9", null ],
+    [ "gethostbyaddr6", "gethost6_8c.html#a7578426de0d9df98d4e5d4b83b04cdea", null ],
+    [ "gethostbyaddr6_internal", "gethost6_8c.html#aab421af6d959dde4bd509784c908bea5", null ],
+    [ "gethostbyname6", "gethost6_8c.html#a45e9e920ff77d664ae1ec5b721434c60", null ],
+    [ "gethostbyname6_internal", "gethost6_8c.html#acde5f964231b309e45d808db0dd5d13f", null ],
+    [ "gethostent6", "gethost6_8c.html#ab4739ccca08de27ccd044e3fd265b506", null ],
+    [ "GetHosts6File", "gethost6_8c.html#abbf4464b229da1585e5557b4e43978ea", null ],
+    [ "main", "gethost6_8c.html#a840291bc02cba5474a4cb46a9b9566fe", null ],
+    [ "print_hosts", "gethost6_8c.html#ab7c5a45c5eaa37a571ce2edfaee1057d", null ],
+    [ "ReadHosts6File", "gethost6_8c.html#aca231f1c0f0d5e05947428854e0269b6", null ],
+    [ "ReopenHost6File", "gethost6_8c.html#ab666c35d8a5cec9491daf57e9377eb85", null ],
+    [ "ReverseHosts6List", "gethost6_8c.html#adfd1dbbfc798e8cd8c141fbd4313a214", null ],
+    [ "sethostent6", "gethost6_8c.html#a9d49fb3484cf710c8731789ffbe1023c", null ],
+    [ "did_lookup", "gethost6_8c.html#a44bd44e6e72b2864659bff549cd2af8e", null ],
+    [ "host0", "gethost6_8c.html#aaf99e441e56a0513ae4295646f5ec367", null ],
+    [ "host6file", "gethost6_8c.html#a7ebd0c1c88713885a5b72b832e7cc1fe", null ],
+    [ "host6Fname", "gethost6_8c.html#ab7a3d145ef0c7445d6d113d82339fb91", null ],
+    [ "hostClose", "gethost6_8c.html#af61000ff53015209922b18e6038cf8e4", null ],
+    [ "is_addr", "gethost6_8c.html#a4df469610da0c93210a1033632dfeea9", null ]
+];

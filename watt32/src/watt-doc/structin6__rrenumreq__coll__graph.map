@@ -1,0 +1,8 @@
+<map id="in6_rrenumreq" name="in6_rrenumreq">
+<area shape="rect" id="node2" href="$structin6__rrenumreq_1_1irr__raflagmask.html" title="in6_rrenumreq::irr\l_raflagmask" alt="" coords="5,259,128,301"/>
+<area shape="rect" id="node5" href="$structin6__prflags.html" title="in6_prflags" alt="" coords="352,363,437,389"/>
+<area shape="rect" id="node6" href="$structin6__prflags_1_1prf__ra.html" title="in6_prflags::prf_ra" alt="" coords="353,155,479,181"/>
+<area shape="rect" id="node7" href="$structin6__prflags_1_1prf__rr.html" title="in6_prflags::prf_rr" alt="" coords="504,155,627,181"/>
+<area shape="rect" id="node8" href="$structsockaddr__in6.html" title="sockaddr_in6" alt="" coords="845,363,944,389"/>
+<area shape="rect" id="node10" href="$structin6__addr.html" title="in6_addr" alt="" coords="910,155,981,181"/>
+</map>

@@ -368,5 +368,6 @@ const struct ssh_signkey ssh_dss = {
     dss_public_blob,
     dss_createkey,
     dss_sign,
+    NULL,
     "ssh-dss",
 };

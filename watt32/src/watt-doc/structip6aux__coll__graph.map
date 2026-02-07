@@ -1,0 +1,15 @@
+<map id="ip6aux" name="ip6aux">
+<area shape="rect" id="node2" href="$structin6__ifaddr.html" title="in6_ifaddr" alt="" coords="1189,692,1268,719"/>
+<area shape="rect" id="node3" href="$structnd__prefix.html" title="nd_prefix" alt="" coords="977,692,1051,719"/>
+<area shape="rect" id="node27" href="$structin6__addrlifetime.html" title="in6_addrlifetime" alt="" coords="957,835,1071,861"/>
+<area shape="rect" id="node6" href="$structin6__addr.html" title="in6_addr" alt="" coords="489,331,560,357"/>
+<area shape="rect" id="node25" href="$structsockaddr__in6.html" title="sockaddr_in6" alt="" coords="723,488,821,515"/>
+<area shape="rect" id="node14" href="$structifnet.html" title="ifnet" alt="" coords="749,1233,795,1260"/>
+<area shape="rect" id="node16" href="$structmbuf.html" title="mbuf" alt="" coords="241,1368,291,1395"/>
+<area shape="rect" id="node21" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="220,1249,312,1276"/>
+<area shape="rect" id="node22" href="$structif__data.html" title="if_data" alt="" coords="494,620,555,647"/>
+<area shape="rect" id="node28" href="$structifaddr.html" title="ifaddr" alt="" coords="987,1380,1041,1407"/>
+<area shape="rect" id="node29" href="$structsockaddr.html" title="sockaddr" alt="" coords="229,1511,303,1537"/>
+<area shape="rect" id="node15" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="476,1352,573,1379"/>
+<area shape="rect" id="node23" href="$structtimeval.html" title="timeval" alt="" coords="234,493,298,520"/>
+</map>

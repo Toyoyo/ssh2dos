@@ -1,0 +1,5 @@
+<map id="ifpppstatsreq" name="ifpppstatsreq">
+<area shape="rect" id="node2" href="$structppp__stats.html" title="ppp_stats" alt="" coords="57,287,136,313"/>
+<area shape="rect" id="node3" href="$structvjstat.html" title="vjstat" alt="" coords="28,197,82,224"/>
+<area shape="rect" id="node5" href="$structpppstat.html" title="pppstat" alt="" coords="122,197,188,224"/>
+</map>

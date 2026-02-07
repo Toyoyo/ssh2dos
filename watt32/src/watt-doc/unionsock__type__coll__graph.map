@@ -1,0 +1,7 @@
+<map id="sock_type" name="sock_type">
+<area shape="rect" id="node2" href="$struct__raw___socket.html" title="_raw_Socket" alt="" coords="133,241,231,268"/>
+<area shape="rect" id="node3" href="$structin___header.html" title="in_Header" alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node9" href="$struct__raw6___socket.html" title="_raw6_Socket" alt="" coords="388,331,493,357"/>
+<area shape="rect" id="node10" href="$structin6___header.html" title="in6_Header" alt="" coords="579,241,667,268"/>
+<area shape="rect" id="node12" href="$structtcp___socket.html" title="tcp_Socket" alt="" coords="969,241,1057,268"/>
+</map>

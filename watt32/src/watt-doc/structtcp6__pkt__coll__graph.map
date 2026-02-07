@@ -1,0 +1,4 @@
+<map id="tcp6_pkt" name="tcp6_pkt">
+<area shape="rect" id="node2" href="$structin6___header.html" title="in6_Header" alt="" coords="166,153,254,180"/>
+<area shape="rect" id="node6" href="$structtcp___header.html" title="tcp_Header" alt="" coords="337,153,427,180"/>
+</map>

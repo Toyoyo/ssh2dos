@@ -1,0 +1,27 @@
+<map id="tcp_debug" name="tcp_debug">
+<area shape="rect" id="node6" href="$structtcpcb.html" title="tcpcb" alt="" coords="2204,2108,2259,2135"/>
+<area shape="rect" id="node8" href="$structsackblock.html" title="sackblock" alt="" coords="1967,2132,2049,2159"/>
+<area shape="rect" id="node42" href="$structscoreboard.html" title="scoreboard" alt="" coords="1965,2233,2051,2260"/>
+<area shape="rect" id="node9" href="$structinpcb.html" title="inpcb" alt="" coords="1981,1408,2035,1435"/>
+<area shape="rect" id="node13" href="$structsockaddr.html" title="sockaddr" alt="" coords="771,1017,846,1044"/>
+<area shape="rect" id="node15" href="$structrtentry.html" title="rtentry" alt="" coords="1312,1273,1371,1300"/>
+<area shape="rect" id="node16" href="$structifnet.html" title="ifnet" alt="" coords="785,1355,832,1381"/>
+<area shape="rect" id="node18" href="$structmbuf.html" title="mbuf" alt="" coords="297,713,347,740"/>
+<area shape="rect" id="node21" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="276,1196,368,1223"/>
+<area shape="rect" id="node27" href="$structradix__node.html" title="radix_node" alt="" coords="279,2347,365,2373"/>
+<area shape="rect" id="node28" href="$structradix__mask.html" title="radix_mask" alt="" coords="528,2160,617,2187"/>
+<area shape="rect" id="node41" href="$structsockaddr__in.html" title="sockaddr_in" alt="" coords="1036,1725,1128,1752"/>
+<area shape="rect" id="node25" href="$structifaddr.html" title="ifaddr" alt="" coords="1055,1335,1109,1361"/>
+<area shape="rect" id="node10" href="$structsocket.html" title="socket" alt="" coords="427,85,488,112"/>
+<area shape="rect" id="node17" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="524,713,621,740"/>
+<area shape="rect" id="node39" href="$structrouter__info.html" title="router_info" alt="" coords="1041,1017,1123,1044"/>
+<area shape="rect" id="node12" href="$structroute.html" title="route" alt="" coords="1508,991,1559,1017"/>
+<area shape="rect" id="node22" href="$structif__data.html" title="if_data" alt="" coords="542,1327,603,1353"/>
+<area shape="rect" id="node26" href="$structrt__metrics.html" title="rt_metrics" alt="" coords="656,1637,736,1664"/>
+<area shape="rect" id="node33" href="$structinpcbinfo.html" title="inpcbinfo" alt="" coords="285,2617,359,2644"/>
+<area shape="rect" id="node36" href="$structin__addr.html" title="in_addr" alt="" coords="777,1919,841,1945"/>
+<area shape="rect" id="node37" href="$structip__moptions.html" title="ip_moptions" alt="" coords="1724,1465,1816,1492"/>
+<area shape="rect" id="node38" href="$structin__multi.html" title="in_multi" alt="" coords="1500,1587,1567,1613"/>
+<area shape="rect" id="node40" href="$structin__ifaddr.html" title="in_ifaddr" alt="" coords="1306,1732,1377,1759"/>
+<area shape="rect" id="node23" href="$structtimeval.html" title="timeval" alt="" coords="290,764,354,791"/>
+</map>

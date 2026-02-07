@@ -1,0 +1,15 @@
+<map id="ppp_softc" name="ppp_softc">
+<area shape="rect" id="node2" href="$structslcompress.html" title="slcompress" alt="" coords="769,581,858,607"/>
+<area shape="rect" id="node8" href="$structcstate.html" title="cstate" alt="" coords="531,270,590,297"/>
+<area shape="rect" id="node13" href="$structtcp___header.html" title="tcp_Header" alt="" coords="230,206,319,233"/>
+<area shape="rect" id="node17" href="$structcompressor.html" title="compressor" alt="" coords="515,1121,606,1147"/>
+<area shape="rect" id="node18" href="$structmbuf.html" title="mbuf" alt="" coords="249,1437,300,1463"/>
+<area shape="rect" id="node19" href="$structifnet.html" title="ifnet" alt="" coords="790,1579,837,1606"/>
+<area shape="rect" id="node20" href="$structifnet_1_1ifqueue.html" title="ifnet::ifqueue" alt="" coords="512,1477,609,1503"/>
+<area shape="rect" id="node23" href="$structsockaddr__dl.html" title="sockaddr_dl" alt="" coords="229,1633,321,1659"/>
+<area shape="rect" id="node24" href="$structif__data.html" title="if_data" alt="" coords="530,1807,591,1834"/>
+<area shape="rect" id="node27" href="$structbpf__program.html" title="bpf_program" alt="" coords="513,2065,608,2091"/>
+<area shape="rect" id="node28" href="$structbpf__insn.html" title="bpf_insn" alt="" coords="239,2174,310,2201"/>
+<area shape="rect" id="node29" href="$structpppstat.html" title="pppstat" alt="" coords="393,1933,459,1959"/>
+<area shape="rect" id="node25" href="$structtimeval.html" title="timeval" alt="" coords="243,2111,307,2138"/>
+</map>
