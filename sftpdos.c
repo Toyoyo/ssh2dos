@@ -28,7 +28,7 @@
 #include <conio.h>
 #include <string.h>
 #include <stdarg.h>
-#include <sys/stat.h> 
+#include <sys/stat.h>
 #include <direct.h>
 
 #include "tcp.h"
@@ -1565,8 +1565,9 @@ int main(int argc, char *argv[])
    printf("SFTPDOS v%s\n", SSH_VERSION);
 #endif
    printf("%s\n", AUTHOR_1);
-   printf("%s\n\n", AUTHOR_2);
-      
+   printf("%s\n", AUTHOR_2);
+   printf("%s\n\n", AUTHOR_3);
+
    Config_Init();	/* Initialize global variables */
    srand(time(NULL));	/* Initialize random number generator */
 
