@@ -39,6 +39,7 @@
 #include "transprt.h"
 #include "keyio.h"
 #include "ed25519.h"
+#include "curve25519.h"
 #if defined (MEMWATCH)
  #include "memwatch.h"
 #endif
@@ -76,6 +77,14 @@ static SHA256_State exhash256;    /* SHA hash after string excange */
 
 static z_stream comp;			     /* compression stream */
 static z_stream decomp;			     /* decompression stream */
+
+/* KEX method negotiation */
+#define KEX_CURVE25519    1
+#define KEX_DH_GROUP14    2
+static int kex_method;
+
+/* X25519 basepoint (u=9) */
+static const unsigned char x25519_basepoint[32] = {9};
 
 /* The prime p used in the DH key exchange. */
 static unsigned char P1[] = {
@@ -146,7 +155,6 @@ unsigned short i;
    }
 
 }
-
 
 static Bignum SSH_getmp(void)
 {
@@ -325,6 +333,60 @@ static void ssh2_mkkey(Bignum K, char *H, char *sessid, char chr,
 }
 
 /*
+ * Check if algorithm name appears in a comma-separated list.
+ * Returns 1 if found, 0 otherwise.
+ */
+static int kex_algo_in_list(const char *algo, unsigned long algo_len,
+                            const char *list, unsigned long list_len)
+{
+const char *p, *end, *comma;
+unsigned long entry_len;
+
+   p = list;
+   end = list + list_len;
+   while (p < end) {
+        comma = p;
+        while (comma < end && *comma != ',')
+            comma++;
+        entry_len = comma - p;
+        if (entry_len == algo_len && memcmp(p, algo, algo_len) == 0)
+            return 1;
+        p = comma + 1;
+   }
+   return 0;
+}
+
+/*
+ * Negotiate KEX method. Parse server's KEXINIT (already in pktin.body)
+ * to determine which KEX algorithm to use. Our preference order is:
+ *   1. curve25519-sha256
+ *   2. diffie-hellman-group14-sha256
+ */
+static void kex_negotiate(void)
+{
+char *server_kex;
+unsigned long server_kex_len;
+char *p;
+
+   /* Server KEXINIT body: skip 16-byte cookie, then first string is kex algos */
+   p = pktin.body + 1 + 16;  /* +1 for type byte, +16 for cookie */
+   server_kex_len = GET_32BIT_MSB_FIRST(p);
+   server_kex = p + 4;
+
+   /* Try our preferred algorithms in order */
+   if (kex_algo_in_list("curve25519-sha256", 17, server_kex, server_kex_len)) {
+        kex_method = KEX_CURVE25519;
+        return;
+   }
+   if (kex_algo_in_list("diffie-hellman-group14-sha256", 29, server_kex, server_kex_len)) {
+        kex_method = KEX_DH_GROUP14;
+        return;
+   }
+   /* Fallback - server will reject if unsupported */
+   kex_method = KEX_DH_GROUP14;
+}
+
+/*
  * SSH2 key exchange. List our supported algorithms, construct
  * and send the packed. Wait for the server key exchange packet
  */
@@ -333,30 +395,33 @@ static void SSH2_KexInit(void)
 unsigned short i;
 unsigned char cookie[16];
 
+   /* Negotiate KEX method based on server's KEXINIT */
+   kex_negotiate();
+
    /* Create cookie */
    for (i = 0; i < 16; i++)
 	cookie[i] = rand() % 256;
 
    SSH_pkt_init(SSH_MSG_KEXINIT);
-   SSH_putdata(cookie, 16); 
-   SSH_putstring("diffie-hellman-group14-sha256");
+   SSH_putdata(cookie, 16);
+   SSH_putstring("curve25519-sha256,diffie-hellman-group14-sha256");
    SSH_putstring("ssh-ed25519,ssh-rsa");
-   SSH_putstring("aes128-ctr"); 
-   SSH_putstring("aes128-ctr"); 
-   SSH_putstring("hmac-sha2-256"); 
-   SSH_putstring("hmac-sha2-256"); 
+   SSH_putstring("aes128-ctr");
+   SSH_putstring("aes128-ctr");
+   SSH_putstring("hmac-sha2-256");
+   SSH_putstring("hmac-sha2-256");
    if(Configuration & COMPRESSION_REQUESTED){
-        SSH_putstring("zlib,none"); 
-        SSH_putstring("zlib,none"); 
+        SSH_putstring("zlib,none");
+        SSH_putstring("zlib,none");
    }
    else{
-        SSH_putstring("none,zlib"); 
-        SSH_putstring("none,zlib"); 
+        SSH_putstring("none,zlib");
+        SSH_putstring("none,zlib");
    }
-   SSH_putuint32(0); 
-   SSH_putuint32(0); 
-   SSH_putbool(0); 
-   SSH_putuint32(0); 
+   SSH_putuint32(0);
+   SSH_putuint32(0);
+   SSH_putbool(0);
+   SSH_putuint32(0);
 
    /* Mix this to the Diffie-Hellman key exchange */
    exhash256 = exhash256base;
@@ -378,47 +443,128 @@ unsigned char cookie[16];
  */
 static short SSH2_DHExchange(void)
 {
-Bignum e, f, K;
+Bignum K;
 char *hostkeydata;
 unsigned long hostkeylen;
 char *sigdata;
 unsigned long siglen;
 unsigned char keyspace[64];
 unsigned char exchange_hash[32];
-int kexinit, kexreply;
 
    /* Initiate our key exchange */
    SSH2_KexInit();
 
+   if (kex_method == KEX_CURVE25519) {
+      /* curve25519-sha256 key exchange (RFC 8731) */
+      unsigned char c25519_secret[32];
+      unsigned char Q_C[32];       /* our public value */
+      char *Q_S_str;
+      unsigned long Q_S_len;
+      unsigned char K_raw[32];
+      int i, allzero;
+
       if((Configuration & VERBOSE_MODE) && first_kex)
-         puts("Diffie-Hellman key exchange");
+         puts("curve25519-sha256 key exchange");
+
+      /* Generate 32 random bytes as ephemeral secret */
+      for (i = 0; i < 32; i++)
+         c25519_secret[i] = rand() % 256;
+
+      /* Compute our public value Q_C = X25519(secret, 9) */
+      curve25519_scalarmult(Q_C, c25519_secret, x25519_basepoint);
+
+      /* Send SSH_MSG_KEX_ECDH_INIT: string Q_C */
+      SSH_pkt_init(SSH_MSG_KEX_ECDH_INIT);
+      SSH_putuint32(32);
+      SSH_putdata(Q_C, 32);
+      SSH_pkt_send();
+
+      /* Receive SSH_MSG_KEX_ECDH_REPLY */
+      if(SSH_pkt_read(0))
+           return(1);
+      if(pktin.type != SSH_MSG_KEX_ECDH_REPLY){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Expected ECDH reply");
+	   return(1);
+      }
+
+      /* Parse: K_S (host key), Q_S (server public), signature */
+      SSH_getstring(&hostkeydata, &hostkeylen);
+      SSH_getstring(&Q_S_str, &Q_S_len);
+      SSH_getstring(&sigdata, &siglen);
+
+      if (Q_S_len != 32) {
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Invalid ECDH server public value");
+	   return(1);
+      }
+
+      /* Compute shared secret K_raw = X25519(secret, Q_S) */
+      curve25519_scalarmult(K_raw, c25519_secret, (unsigned char *)Q_S_str);
+
+      /* Zero the ephemeral secret */
+      memset(c25519_secret, 0, 32);
+
+      /* Low-order point check: K must not be all zeros */
+      allzero = 1;
+      for (i = 0; i < 32; i++) {
+         if (K_raw[i] != 0) { allzero = 0; break; }
+      }
+      if (allzero) {
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "ECDH shared secret is zero");
+	   return(1);
+      }
+
+      /* Per RFC 8731 Section 3.1: interpret X25519 output bytes directly
+       * as an unsigned integer in network byte order (no byte reversal) */
+      K = bignum_from_bytes(K_raw, 32);
+
+      /* Hash exchange: H = SHA-256(... || K_S || Q_C || Q_S || K) */
+      sha256_string(&exhash256, hostkeydata, hostkeylen);
+      sha256_string(&exhash256, Q_C, 32);
+      sha256_string(&exhash256, (unsigned char *)Q_S_str, 32);
+      sha256_mpint(&exhash256, K);
+      SHA256_Final(&exhash256, exchange_hash);
+
+
+   } else {
+      /* diffie-hellman-group14-sha256 key exchange */
+      Bignum e, f;
+
+      if((Configuration & VERBOSE_MODE) && first_kex)
+         puts("Diffie-Hellman group14 key exchange");
       dh_setup_group14();
-      kexinit = SSH_MSG_KEXDH_INIT;
-      kexreply = SSH_MSG_KEXDH_REPLY;
 
-   e = dh_create_e(128 * 2);
+      e = dh_create_e(128 * 2);
 
-   SSH_pkt_init(kexinit);
-   SSH_putmp(e);
-   SSH_pkt_send();
+      SSH_pkt_init(SSH_MSG_KEXDH_INIT);
+      SSH_putmp(e);
+      SSH_pkt_send();
 
-   if(SSH_pkt_read(0))
-        return(1);
-   if(pktin.type != kexreply){
-	SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED, "Expected kex reply");
-	return(1);
+      if(SSH_pkt_read(0))
+           return(1);
+      if(pktin.type != SSH_MSG_KEXDH_REPLY){
+	   SSH_Disconnect(SSH_DISCONNECT_KEY_EXCHANGE_FAILED,
+			  "Expected kex reply");
+	   return(1);
+      }
+
+      SSH_getstring(&hostkeydata, &hostkeylen);
+      f = SSH_getmp();
+      SSH_getstring(&sigdata, &siglen);
+      K = dh_find_K(f);
+
+      sha256_string(&exhash256, hostkeydata, hostkeylen);
+      sha256_mpint(&exhash256, e);
+      sha256_mpint(&exhash256, f);
+      sha256_mpint(&exhash256, K);
+      SHA256_Final(&exhash256, exchange_hash);
+
+      dh_cleanup();
+      freebn(e);
+      freebn(f);
    }
-
-   SSH_getstring(&hostkeydata, &hostkeylen);
-   f = SSH_getmp();
-   SSH_getstring(&sigdata, &siglen);
-   K = dh_find_K(f);
-
-   sha256_string(&exhash256, hostkeydata, hostkeylen);
-   sha256_mpint(&exhash256, e);
-   sha256_mpint(&exhash256, f);
-   sha256_mpint(&exhash256, K);
-   SHA256_Final(&exhash256, exchange_hash);
 
    /* Verify host key signature on exchange hash */
    if(hostkeylen >= 15 &&
@@ -493,10 +639,6 @@ int kexinit, kexreply;
       if(Configuration & VERBOSE_MODE)
 	   puts("Host key accepted (ssh-rsa)");
    }
-
-   dh_cleanup();
-   freebn(e);
-   freebn(f);
 
    /* Send SSH_MSG_NEWKEYS */
    if((Configuration & VERBOSE_MODE) && first_kex)

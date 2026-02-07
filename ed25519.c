@@ -957,6 +957,121 @@ static void sc_reduce(unsigned char *s)
 }
 
 /*
+ * X25519 / Curve25519 scalar multiplication (RFC 7748)
+ * Uses the Montgomery ladder on the u-coordinate.
+ * Reuses the fe_* field arithmetic already defined above.
+ */
+
+/* Constant-time conditional swap */
+static void fe_cswap(fe *f, fe *g, unsigned int b)
+{
+    int i;
+    long mask = -(long)b;
+    long x;
+    for (i = 0; i < 10; i++) {
+        x = mask & (f->v[i] ^ g->v[i]);
+        f->v[i] ^= x;
+        g->v[i] ^= x;
+    }
+}
+
+/* Multiply by the constant 121666 = (a+2)/4 for Curve25519 */
+static void fe_mul121666(fe *h, const fe *f)
+{
+    long f0,f1,f2,f3,f4,f5,f6,f7,f8,f9;
+    i64 h0,h1,h2,h3,h4,h5,h6,h7,h8,h9;
+    i64 carry0,carry1,carry2,carry3,carry4,carry5,carry6,carry7,carry8,carry9;
+
+    f0=f->v[0]; f1=f->v[1]; f2=f->v[2]; f3=f->v[3]; f4=f->v[4];
+    f5=f->v[5]; f6=f->v[6]; f7=f->v[7]; f8=f->v[8]; f9=f->v[9];
+
+    h0=(i64)f0*121666; h1=(i64)f1*121666; h2=(i64)f2*121666;
+    h3=(i64)f3*121666; h4=(i64)f4*121666; h5=(i64)f5*121666;
+    h6=(i64)f6*121666; h7=(i64)f7*121666; h8=(i64)f8*121666;
+    h9=(i64)f9*121666;
+
+    carry9=(h9+(i64)(1L<<24))>>25; h0+=carry9*19; h9-=carry9<<25;
+    carry1=(h1+(i64)(1L<<24))>>25; h2+=carry1; h1-=carry1<<25;
+    carry3=(h3+(i64)(1L<<24))>>25; h4+=carry3; h3-=carry3<<25;
+    carry5=(h5+(i64)(1L<<24))>>25; h6+=carry5; h5-=carry5<<25;
+    carry7=(h7+(i64)(1L<<24))>>25; h8+=carry7; h7-=carry7<<25;
+    carry0=(h0+(i64)(1L<<25))>>26; h1+=carry0; h0-=carry0<<26;
+    carry2=(h2+(i64)(1L<<25))>>26; h3+=carry2; h2-=carry2<<26;
+    carry4=(h4+(i64)(1L<<25))>>26; h5+=carry4; h4-=carry4<<26;
+    carry6=(h6+(i64)(1L<<25))>>26; h7+=carry6; h6-=carry6<<26;
+    carry8=(h8+(i64)(1L<<25))>>26; h9+=carry8; h8-=carry8<<26;
+
+    h->v[0]=(long)h0; h->v[1]=(long)h1; h->v[2]=(long)h2;
+    h->v[3]=(long)h3; h->v[4]=(long)h4; h->v[5]=(long)h5;
+    h->v[6]=(long)h6; h->v[7]=(long)h7; h->v[8]=(long)h8;
+    h->v[9]=(long)h9;
+}
+
+/*
+ * curve25519_scalarmult: X25519 Diffie-Hellman (RFC 7748 Section 5)
+ *
+ * q = X25519(n, p)
+ * n: 32-byte scalar (clamped internally)
+ * p: 32-byte u-coordinate of input point
+ * q: 32-byte u-coordinate of result
+ */
+void curve25519_scalarmult(unsigned char *q,
+                           const unsigned char *n,
+                           const unsigned char *p)
+{
+    unsigned char e[32];
+    fe x1, x2, z2, x3, z3, tmp0, tmp1;
+    int pos;
+    unsigned int swap;
+    unsigned int b;
+
+    memcpy(e, n, 32);
+    e[0] &= 248;
+    e[31] &= 127;
+    e[31] |= 64;
+
+    fe_frombytes(&x1, p);
+    fe_1(&x2);
+    fe_0(&z2);
+    fe_copy(&x3, &x1);
+    fe_1(&z3);
+
+    swap = 0;
+    for (pos = 254; pos >= 0; pos--) {
+        b = (e[pos / 8] >> (pos & 7)) & 1;
+        swap ^= b;
+        fe_cswap(&x2, &x3, swap);
+        fe_cswap(&z2, &z3, swap);
+        swap = b;
+
+        fe_sub(&tmp0, &x3, &z3);
+        fe_sub(&tmp1, &x2, &z2);
+        fe_add(&x2, &x2, &z2);
+        fe_add(&z2, &x3, &z3);
+        fe_mul(&z3, &tmp0, &x2);
+        fe_mul(&z2, &z2, &tmp1);
+        fe_sq(&tmp0, &tmp1);
+        fe_sq(&tmp1, &x2);
+        fe_add(&x3, &z3, &z2);
+        fe_sub(&z2, &z3, &z2);
+        fe_mul(&x2, &tmp1, &tmp0);
+        fe_sub(&tmp1, &tmp1, &tmp0);
+        fe_sq(&z2, &z2);
+        fe_mul121666(&z3, &tmp1);
+        fe_sq(&x3, &x3);
+        fe_add(&tmp0, &tmp0, &z3);
+        fe_mul(&z3, &x1, &z2);
+        fe_mul(&z2, &tmp1, &tmp0);
+    }
+    fe_cswap(&x2, &x3, swap);
+    fe_cswap(&z2, &z3, swap);
+
+    fe_invert(&z2, &z2);
+    fe_mul(&x2, &x2, &z2);
+    fe_tobytes(q, &x2);
+}
+
+/*
  * ed25519_verify: verify an Ed25519 signature.
  * RFC 8032 Section 5.1.7
  *
