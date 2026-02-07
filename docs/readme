@@ -2,6 +2,12 @@ SSH2DOS v0.2.1+SHA256.1+ed25519+curve25519-sha256 by Toyoyo
 https://github.com/Toyoyo/ssh2dos
 Released on 02-07-2026
 
+Added:
+- AI-generated ssh-ed25519 for HostKeyAlgorithm
+- AI-generated curve25519-sha256 for KexAlgorithm
+
+----------------------
+
 SSH2DOS v0.2.1+SHA256.1 patch by Antti Takala
 https://github.com/AnttiTakala/SSH2DOS
 Released on 04-14-2021
